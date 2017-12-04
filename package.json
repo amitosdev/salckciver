@@ -1,0 +1,24 @@
+{
+  "name": "slackciver",
+  "version": "0.0.1",
+  "description": "Get an HTTP request details in a slack channel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slack",
+    "request",
+    "response",
+    "HTTP",
+    "test"
+  ],
+  "author": "Amit Tal",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/client": "^3.14.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.3",
+    "ua-parser-js": "^0.7.17"
+  }
+}
