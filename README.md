@@ -1,6 +1,8 @@
 # Slackciver
 Get an HTTP request details in a slack channel.
 
+![slackciver screenshot](slackciver-screenshot.png)
+
 ## Usage
 This module is meant to deploy with [Serverless framework](https://serverless.com) on AWS.
 
