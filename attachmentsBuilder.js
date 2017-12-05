@@ -12,6 +12,12 @@ module.exports = (reqData) => {
 		ts: moment(reqData.requestTime, 'DD/MMM/YYYY:HH:mm:ss').unix()
 	}
 
+	if (reqData.topic) {
+		message.pretext += `. Topic: ${reqData.topic}`
+	}
+
+	message.fallback = message.pretext
+
 	if (reqData.sourceIp) {
 		message.fields.push(getField('Request IP', [reqData.sourceIp]))
 	}

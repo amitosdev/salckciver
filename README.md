@@ -16,8 +16,9 @@ This module is meant to deploy with [Serverless framework](https://serverless.co
 After deploying, you will gen an AWP API gatway adress:
 
 ```
-https://foo123bar456.execute-api.us-east-1.amazonaws.com/prod/channel/{channelName}
+https://foo123bar456.execute-api.us-east-1.amazonaws.com/prod/channel/{channelName}/{topic}
 ```
 
 Open a Slack channel and replace `{channelName}` in the url with the channel name.
 You can now send *ANY* kind of an HTTP request with query stings / payload and see it in the channel.
+Topic is not mandatory. It will be added to the request description and can be use to identify the request.

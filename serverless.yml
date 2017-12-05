@@ -7,14 +7,14 @@ provider:
   name: aws
   timeout: 300
   environment:
-      SLACK_API_TOKEN: 'your-token-here'
+      SLACK_API_TOKEN: 'your token goes here'
 
 functions:
   sendToSlack:
     handler: handler.sendToSlack
     events:
       - http:
-          path: channel/{channelName}
+          path: channel/{channelName}/{topic}
           method: any
 package:
   exclude:

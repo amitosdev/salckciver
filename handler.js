@@ -11,6 +11,7 @@ module.exports.sendToSlack = (event, context, callback) => {
 	console.log('called with: ', event)
 
 	let requestData = {
+		topic: event.pathParameters.topic,
 		httpMethod: event.httpMethod,
 		queryStringParameters: event.queryStringParameters,
 		requestTime: event.requestContext.requestTime,
