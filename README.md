@@ -13,7 +13,7 @@ This module is meant to deploy with [Serverless framework](https://serverless.co
 5. Run `SLS deploy`
 
 ## Sending request
-After deploying, you will gen an AWP API gatway adress:
+After deploying, you will gen an AWS API gatway adress:
 
 ```
 https://foo123bar456.execute-api.us-east-1.amazonaws.com/prod/channel/{channelName}/{topic}
