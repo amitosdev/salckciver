@@ -1,6 +1,6 @@
 {
   "name": "slackciver",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Get an HTTP request details in a slack channel.",
   "main": "index.js",
   "scripts": {
