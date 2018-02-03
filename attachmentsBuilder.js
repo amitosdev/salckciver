@@ -6,14 +6,14 @@ const moment = require('moment')
 module.exports = (reqData) => {
 	let message = {
 		pretext: `/${reqData.httpMethod} request received`,
-		author_name: `${uaToString(reqData.userAgent)}`,
+		author_name: uaToString(reqData.userAgent),
 		fields: [],
 		footer: 'Slackciver',
 		ts: moment(reqData.requestTime, 'DD/MMM/YYYY:HH:mm:ss').unix()
 	}
 
 	if (reqData.topic) {
-		message.pretext += `. Topic: ${reqData.topic}`
+		message.pretext += `| Topic: "${reqData.topic}"`
 	}
 
 	message.fallback = message.pretext

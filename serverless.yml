@@ -14,8 +14,13 @@ functions:
     handler: handler.sendToSlack
     events:
       - http:
+          path: channel/{channelName}
+          method: any
+          cors: true
+      - http:
           path: channel/{channelName}/{topic}
           method: any
+          cors: true
 package:
   exclude:
     - test/**

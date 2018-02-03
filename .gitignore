@@ -1,3 +1,44 @@
+### Node based project template
+# IDEs
 .idea
+.vscode
+
+# OSX files
+.DS_Store
+
+# Temp user files
+1.*
+temp
+
+# Node.js modules libery
+node_modules
+
+# RC module files
+.*rc
+!.eslintrc
+
+# logs
+access_log
+log
+
+# Level DB
+levelupdb
+
+# NPM
+npm-debug.log
+package-lock.json
+
+# Gulp
+.gulp
+
+# New relic
+newrelic_agent.log
+
+# Tests covarge
+coverage
+
+# Temp file
 1.js
+
+# Serverless
 .serverless
